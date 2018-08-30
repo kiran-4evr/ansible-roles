@@ -1,0 +1,5 @@
+---
+ - name: to install nmap
+   yum:
+    name: "{{ package }}"
+    state: present

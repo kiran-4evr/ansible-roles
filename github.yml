@@ -1,0 +1,6 @@
+---
+ - name: thois is the playbook to call apache role and execute it
+   hosts: webserver
+
+   roles:
+    - github

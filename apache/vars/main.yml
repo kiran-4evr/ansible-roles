@@ -1,0 +1,8 @@
+---
+# vars file for apache
+
+package: httpd
+group: apachegroup
+user: apacheuser
+logdir: /opt/apache_logs
+logfile: /opt/apache_logs/apache.log

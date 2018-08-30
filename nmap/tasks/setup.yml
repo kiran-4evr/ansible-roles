@@ -1,0 +1,30 @@
+---
+   - name: to create user
+     group:
+      name: "{{ group }}"
+      state: present
+   - name: to create group
+     user:
+      name: "{{ user }}"
+      group: "{{ group }}"
+      create_home: yes
+      state: present
+      uid: 20008
+      shell: /bin/sh
+
+   - name: to create directory to create logs
+     file:
+      name: "{{ logdir }}"
+      state: directory
+      mode: 0644
+      owner: "{{ user }}"
+      group: "{{ group }}"
+   - name: to create directory to create logs
+     file:
+      name: "{{ logfile }}"
+      state: touch
+      mode: 0644
+      owner: "{{ user }}"
+      group: "{{ group }}"
+
+

@@ -1,0 +1,9 @@
+---
+# vars file for nmap
+  
+  package: nmap
+  user: nmapuser
+  group: nmapgroup
+  logdir: /opt/nmaplog
+  logfile: /opt/nmaplog/nmap.log
+

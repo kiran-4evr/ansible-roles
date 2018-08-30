@@ -1,0 +1,5 @@
+---
+ - name: to deploy code to apache web server
+   copy:
+    src: files/NetworkManager.conf
+    dest: /opt/NetworkManager.conf

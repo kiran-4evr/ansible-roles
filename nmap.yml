@@ -1,0 +1,6 @@
+---
+ - name: this will call nmap role and execute it
+   hosts: webserver
+  
+   roles:
+    - nmap

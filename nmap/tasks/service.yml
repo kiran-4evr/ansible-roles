@@ -1,0 +1,6 @@
+---
+ - name: to start my nmap service
+   service:
+    name: "{{ package }}"
+    state: started
+    enabled: yes

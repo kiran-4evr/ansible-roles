@@ -1,0 +1,12 @@
+---
+ - name: installing nginx
+   yum:
+    name: "{{ package }}"
+    state: present
+   when: ansible_os_family== 'RedHat'
+ - name: for debian systems
+   apt: 
+    name: "{{ package }}"
+    state: present
+   when: ansible_os_family== 'Debian'
+
